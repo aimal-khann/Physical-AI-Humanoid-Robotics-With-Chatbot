@@ -1,0 +1,165 @@
+.chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.chat-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chat-window {
+  position: absolute;
+  bottom: 75px;
+  right: 0;
+  width: 350px;
+  height: 450px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.chat-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.chat-welcome {
+  text-align: center;
+  color: #6c757d;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.chat-msg {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 15px;
+  max-width: 80%;
+  position: relative;
+}
+
+.chat-msg p {
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.chat-msg.user {
+  background-color: #e0f7fa;
+  align-self: flex-end;
+  margin-left: auto;
+  border-bottom-right-radius: 2px;
+}
+
+.chat-msg.bot {
+  background-color: #ffffff;
+  align-self: flex-start;
+  margin-right: auto;
+  border: 1px solid #e9ecef;
+  border-bottom-left-radius: 2px;
+}
+
+.chat-msg.bot.loading {
+  font-style: italic;
+  color: #6c757d;
+}
+
+.chat-sources {
+  font-size: 12px;
+  color: #6c757d;
+  margin-top: 5px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 5px;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px 15px;
+  border-top: 1px solid #dee2e6;
+  background-color: white;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  border: 1px solid #ced4da;
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.chat-input button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.chat-input button:disabled {
+  background-color: #94d3a2;
+  cursor: not-allowed;
+}
+
+/* Styles for Ask AI Button */
+.ask-ai-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 10000; /* Ensure it's above other elements */
+  transition: background-color 0.2s;
+}
+
+.ask-ai-button:hover {
+  background-color: #0056b3;
+}
