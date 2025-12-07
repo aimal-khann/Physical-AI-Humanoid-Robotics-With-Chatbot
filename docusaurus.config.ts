@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://gemini-docusaurus-book.github.io',
+  url: 'https://aimal-khan.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/Physical-AI-Humanoid-Robotics-With-Chatbot/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'gemini-docusaurus-book', // Usually your GitHub org/user name.
-  projectName: 'ai-book', // Usually your repo name.
+  organizationName: 'aimal-khan', // Usually your GitHub org/user name.
+  projectName: 'Physical-AI-Humanoid-Robotics-With-Chatbot', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
