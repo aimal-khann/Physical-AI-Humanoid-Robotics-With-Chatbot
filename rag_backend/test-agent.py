@@ -2,7 +2,7 @@ import requests
 import json
 
 # The URL of your running Agent server
-url = "http://127.0.0.1:8000/chat"
+url = "https://chatbot-backend-for-book.up.railway.app/chat"
 
 # The message we want to send
 payload = {
