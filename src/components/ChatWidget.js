@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useImperativeHandle, forwardRef } from 'react';
 import './ChatWidget.css';
 
-const API_URL = 'http://127.0.0.1:8000/chat';
+const API_URL = 'https://chatbot-backend-for-book.up.railway.app/chat';
 
 const ChatWidget = forwardRef((props, ref) => {
   const [isOpen, setIsOpen] = useState(false);
