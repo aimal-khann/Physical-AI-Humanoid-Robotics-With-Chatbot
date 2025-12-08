@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useImperativeHandle, forwardRef } from 'react';
 import './ChatWidget.css';
 
-const API_URL = 'https://chatbot-backend-for-book.up.railway.app/ask';
+
 
 const ChatWidget = forwardRef((props, ref) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +33,7 @@ const ChatWidget = forwardRef((props, ref) => {
     setIsLoading(true);
 
     try {
-      const response = await fetch(API_URL, {
+      const response = await fetch("https://chatbot-backend-for-book.up.railway.app/ask", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
